@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--Imports JavaScript and CSS files-->
+   <head>
+      <title> A L M</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <link rel="stylesheet" href="resources/Blogasaurus.css">
+      <script src="resources/Blogasaurus.js"></script>
+   </head>
+
+<!--Imports fonts-->
+   <style>
+   @import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
+   </style>
+
+
+   <body>
+      <div>
+         <img src = "resources/airplane3.png" class = "opening" id = "startPic">
+      </div>
+
+      <div id = "greyOut" class = "opening")>
+         <h1  class = "startText">
+            Simple starts; brilliant ends.
+         </h1>
+         <h2 class = "startText" id = "subStartText"> <hr> {{ name }} Mejia
+            <br>
+            Student, Leader, Pokemon Master</h2>
+      </div>
+
+      <ul class = "menu">
+         <li><a href="/">Home</a></li>
+         <li><a href="/jokes">Jokes</a></li>
+         <li><a href="#contact">Contact</a></li>
+         <li style="float:right"><a class="activeMenu" href="#about">About</a></li>
+         <li style="float:right"><a href="{{ correctLink }}">
+            {% if loginStat %}
+            Sign Out
+            {% else %}
+            Login
+            {% endif %}
+         </a></li>
+         <li style="float:right" id = "userNameDisplay"> {% if userName %}
+            {{ userName }}
+            {% endif %} </li>
+      </ul>
+
+
+      <!-- SLideshow container and Pictures -->
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+            <div class="numbertext">1 / 9</div>
+            <img src="resources/AustinLindes.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">2 / 9</div>
+            <img src="resources/AustinTiger.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">3 / 9</div>
+            <img src="resources/AustinExecs.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div>
+            <img src="resources/AustinOnRock.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div>
+            <img src="resources/DogFilter.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div>
+            <img src="resources/AustinAndMaya.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div>
+            <img src="resources/AustinDonkey.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img src="resources/AustinBucket.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext">9 / 9</div>
+            <img src="resources/AustinAndNicole.jpg" style="width:100%">
+         </div>
+
+
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+         <br>
+
+         <!-- Dots of the slideshow -->
+      <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span>
+         <span class="dot" onclick="currentSlide(6)"></span>
+         <span class="dot" onclick="currentSlide(7)"></span>
+         <span class="dot" onclick="currentSlide(8)"></span>
+         <span class="dot" onclick="currentSlide(9)"></span>
+      </div>
+
+
+      <br>
+
+      <!--Photo of Austin-->
+      <!-- <img src ="Austin's Headshot.jpg" width="300" height="300" alt="Headshot"/> -->
+
+      <!--Hyperlink Menu-->
+      <!-- <ul id="Menu">
+         <li><a href="#div_idTrivia">Austin Trivia</a></li>
+
+      </ul> -->
+
+      <h1>Hello! My name is Austin, and here are some of my favorite jokes.</h1>
+
+      <section class = "column">
+
+         <!-- <div class = "statBox"> -->
+            <div class="innerCol">
+               Did you hear about the short psychic that broke out of jail? <br> Yeah, it's a small medium at large
+            </div>
+         <!-- </div>
+
+         <div class = "statBox"> -->
+            <div class="innerCol">What do you call a fish with no eye's? <br> A FSH!</div>
+         <!-- </div>
+
+         <div class = "statBox"> -->
+            <div class="innerCol">A man walks into a bar, and he orders some drinks. As he takes them back to his table, he bumps into Beethoven's fith symphony. <br> Immediately, the fifth symphony gets angry, shouting at the man to fight him. Panicked, the man runs out of the bar. <br> The bartender calls after him, "Wait! Come back here and face the music"</div>
+         <!-- </div>
+
+         <div class = "statBox"> -->
+            <div class="innerCol">A bottle of water is walking down the street, and a man in a car pulls up to it. "Hey there baby!" <br>He calls, "You're looking Aqua-FINE-a!"</div>
+         <!-- </div>
+
+         <div class = "statBox"> -->
+            <div class="innerCol">My brother bet me $100 dollars that I couldn't build a car out of spagetti. You should have seen the look on her face as I drove pasta</div>
+         <!-- </div>
+
+         <div class = "statBox"> -->
+            <div class="innerCol">What do you call a sleep-walking nun? <br> A roaming catholic</div>
+         <!-- </div> -->
+
+      </section>
+
+
+
+
+
+
+      <br><br>
+
+      <h2>About the Man behind the Success</h2>
+
+      <p>Austin is critically aclaimed for his numberous achomplishments in the feilds of mathamatics, physics, poetry, archeology, and interpretive dance. He is widely regarded by numberous new publications (Times Magazine, The New Yort Times, etc.) to be the "GOAT" of his generation.
+
+         <br><br>
+
+      Austin enoys spending time with his dogs, riding his twenty foot-tall tiger, and running on the beach.</p>
+
+      <br>
+
+
+      <br><br>
+
+      <!--Hyperlink end-->
+      <div id="div_idTrivia"></div>
+
+
+      <h2>Random Austin Trivia</h2>
+
+      <!--Trivia Section-->
+      <p>
+         Austin has spent the last 11 years of his live in Chapel Hill, North Carolina; where did he spend the first 7?
+
+         <br> <br>
+
+         a) Raleigh, North Carolina <br>
+         b) Austin, Texas <br>
+         c) Denville, New Jersey <br>
+         d) Brunswick, North Dakota <br>
+         <a href="http://http://www.ifyoulovetoread.com/book/chten_cats1105.htm"target="_blank">[Answer]</a>
+      </p>
+      <br>
+      <p>
+         Austin favors many a drink. Which, however, is his favorite?
+
+         <br> <br>
+
+         a) Hot Chocolate (Specifically, Swiss Miss) <br>
+         b) Sparkling Water (Specifcally, La Croix) <br>
+         c) Ice Tea (Specifically, the kind his Mom makes) <br>
+         d) Coke (Speically, Coke Zero Cherry) <br>
+         <a href="http://http://www.ifyoulovetoread.com/book/chten_cats1105.htm"target="_blank">[Answer]</a>
+      </p>
+      <br>
+      <p>
+         Austin has two beautiful dogs! What are their names?
+
+         <br> <br>
+
+         a) Ray-Ray and Lucy <br>
+         b) Luna and Raja <br>
+         c) Cupid and Val <br>
+         d) Macie and Callie <br>
+         <a href="http://http://www.ifyoulovetoread.com/book/chten_cats1105.htm"target="_blank">[Answer]</a>
+      </p>
+      <br>
+      <p>
+         Three of the following statements are facts about the wonderful Austin Mejia. One isn't. Your mission, if you choose to accept it, is to figure out which is the lie.
+
+         <br> <br>
+
+         a) Austin once saw Sophia Vegara twice on the same day at the same plant nursery. <br>
+         b) Austin once held a 40-pound snake around his neck-despite being absolutely terrified of snakes. <br>
+         c) Whereas most people have four heart valves, Austin technically only has three. <br>
+         d) Austin is mildly allergic to many, many things. For example, he recently found out he is allergic to the grass in his backyard! <br>
+         <a href="http://http://www.ifyoulovetoread.com/book/chten_cats1105.htm"target="_blank">[Answer]</a>
+      </p>
+      <br>
+      <p>
+         Austin, despite being as excellent as he is, has a flaw that deeply bothers him. What is it?
+         <br> <br>
+
+         a) He is extremely, EXTREMELY clumsy <br>
+         b) His handwriting is god-awful.<br>
+         c) He always accidentally sends emails before he's done <br>
+         d) He is constantly forgetting to bring something (an umbrella, homework, etc.) <br>
+         <a href="http://http://www.ifyoulovetoread.com/book/chten_cats1105.htm"target="_blank">[Answer]</a>
+      </p>
+   </body>
+
+<html>

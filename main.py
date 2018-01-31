@@ -19,6 +19,11 @@ class MainHandler(webapp2.RequestHandler):
         template = env.get_template('Home.html')
         self.response.write(template.render(var))
 
+class ResumeHandler(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('resume.html')
+        self.response.write(template.render())
+
 class JokesHandler(webapp2.RequestHandler):
     def get(self):
         template = env.get_template('jokes.html')
@@ -28,4 +33,5 @@ class JokesHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/jokes', JokesHandler),
+    ('/resume', ResumeHandler),
 ], debug=True)

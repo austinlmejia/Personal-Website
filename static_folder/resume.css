@@ -1,0 +1,96 @@
+html {
+  background-color: rgba(156, 196, 242, 1);
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  color: #EDF5E1;
+  margin: auto;
+  padding: 15px;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  color: #05386B;
+  width: 350px;
+}
+h3 {
+  font-family: 'Dosis', sans-serif;
+  color: #05386B;
+  width: 350px;
+  font-size: 25px;
+}
+
+body {
+  background-color: rgba(156, 196, 242, 1);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  height: 100%;
+}
+
+p {
+  color: #EDF5E1;
+  font-size: 20px;
+  font-family: 'Raleway Dots', cursive;
+  text-align: left;
+}
+
+hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-style: inset;
+  border-width: 1px;
+  align-items: center;
+  border-color: white;
+}
+
+* {box-sizing:border-box}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #6b9ad0;
+}
+
+ul.topnav li a.active:hover {
+  background-color: #608abb;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px){
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}

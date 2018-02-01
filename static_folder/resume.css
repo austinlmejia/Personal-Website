@@ -4,10 +4,15 @@ html {
 }
 
 h1 {
-  font-family: 'Dosis', sans-serif;
-  color: #EDF5E1;
-  margin: auto;
-  padding: 15px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 50px;
+  padding-top: 20px;
+  float: left;
+  width: 35%;
+  text-align: left;
+  padding-right: 0px;
+  color: white;
 }
 
 h2 {
@@ -30,7 +35,7 @@ body {
 }
 
 p {
-  color: #EDF5E1;
+  color: white;
   font-size: 20px;
   font-family: 'Raleway Dots', cursive;
   text-align: left;
@@ -48,8 +53,18 @@ hr {
   border-color: white;
 }
 
-* {box-sizing:border-box}
+a {
+  color: white;
+}
 
+a:hover {
+  color: grey;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+* {box-sizing:border-box}
 
 ul.topnav {
   list-style-type: none;
@@ -93,4 +108,76 @@ ul.topnav li.right {
 @media screen and (max-width: 600px){
   ul.topnav li.right,
   ul.topnav li {float: none;}
+}
+
+.resume-container {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+.resume {
+  padding: 3%;
+  padding-bottom: 0%;
+  float: left;
+  width: 85%;
+  align: center;
+  margin: 7%;
+}
+
+#resumeText {
+  padding-left: 5%;
+  width: 80%;
+}
+
+.textContainer {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+#ResumeHeader {
+  font-size: 120px;
+}
+
+#firstBreak {
+  width: 97.5%;
+}
+
+.resumeHighlights {
+  list-style-type: square;
+  font-size: 25px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 25%;
+  display: -ms-flexbox; /* IE10 */
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  .resume-container {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .textContainer {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .resume {
+    padding: 5%;
+    padding-bottom: 0%;
+    margin-bottom: 3%;
+  }
+  
+  #resumeText {
+    padding-left: 12%;
+  }
 }

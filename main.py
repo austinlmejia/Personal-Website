@@ -24,14 +24,14 @@ class ResumeHandler(webapp2.RequestHandler):
         template = env.get_template('resume.html')
         self.response.write(template.render())
 
-class JokesHandler(webapp2.RequestHandler):
+class ContactHandler(webapp2.RequestHandler):
     def get(self):
-        template = env.get_template('jokes.html')
+        template = env.get_template('contact.html')
         self.response.write(template.render())
 
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/jokes', JokesHandler),
+    ('/contact', JokesHandler),
     ('/resume', ResumeHandler),
 ], debug=True)

@@ -5,19 +5,20 @@ html {
 
 h1 {
   font-family: 'Dosis', sans-serif;
-  color: #EDF5E1;
+  color: white;
   margin: auto;
   padding: 15px;
 }
 
 h2 {
   font-family: 'Dosis', sans-serif;
-  color: #05386B;
+  color: white;
   width: 350px;
 }
+
 h3 {
   font-family: 'Dosis', sans-serif;
-  color: #05386B;
+  color: white;
   width: 350px;
   font-size: 25px;
 }
@@ -30,11 +31,10 @@ body {
 }
 
 p {
-  color: #EDF5E1;
+  color: white;
   font-size: 20px;
   font-family: 'Raleway Dots', cursive;
   text-align: left;
-
 }
 
 hr {
@@ -50,7 +50,6 @@ hr {
 }
 
 * {box-sizing:border-box}
-
 
 /* Begining of classes and ID's */
 
